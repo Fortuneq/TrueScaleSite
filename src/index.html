@@ -26,6 +26,53 @@
         	href = this.href,
             delay = this.dataset.delay || 500;
 
+        // Check if it's a hash link for smooth scrolling
+        if (href.includes('#') && href.includes('process')) {
+          e.preventDefault();
+          document.getElementById('process').scrollIntoView({ behavior: 'smooth' });
+          return;
+        }
+        if (href.includes('#') && href.includes('services')) {
+          e.preventDefault();
+          document.getElementById('services-section').scrollIntoView({ behavior: 'smooth' });
+          return;
+        }
+        if (href.includes('#') && href.includes('projects')) {
+          e.preventDefault();
+          document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+          return;
+        }
+        
+        // Handle scroll down button
+        if ($this.find('.text-link-button').text() === 'Scroll Down') {
+          e.preventDefault();
+          document.querySelector('.content-section').scrollIntoView({ behavior: 'smooth' });
+          return;
+        }
+        
+        // Handle footer navigation links
+        if ($this.hasClass('footer-link')) {
+          var linkText = $this.find('.footer-link-text').text();
+          e.preventDefault();
+          
+          if (linkText === 'Home') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return;
+          }
+          if (linkText === 'Process') {
+            document.getElementById('process').scrollIntoView({ behavior: 'smooth' });
+            return;
+          }
+          if (linkText === 'Services') {
+            document.getElementById('services-section').scrollIntoView({ behavior: 'smooth' });
+            return;
+          }
+          if (linkText === 'Projects') {
+            document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+            return;
+          }
+        }
+
         e.preventDefault();       
         setTimeout(function(){ window.location = href },delay);
       });
