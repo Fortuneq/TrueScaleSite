@@ -16,9 +16,19 @@ RUN echo 'server { \
     } \
     \
     # Настройки для статических файлов \
-    location ~* \.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ { \
+    location ~* \.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot|webp|html)$ { \
         expires 1y; \
         add_header Cache-Control "public, immutable"; \
+        try_files $uri $uri/ =404; \
+    } \
+    \
+    # Обеспечиваем правильные MIME типы \
+    location ~* \.css$ { \
+        add_header Content-Type text/css; \
+    } \
+    \
+    location ~* \.js$ { \
+        add_header Content-Type application/javascript; \
     } \
 }' > /etc/nginx/conf.d/default.conf
 
