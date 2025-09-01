@@ -42,3 +42,24 @@
 .cursor-2 {
   background-color: var(--primary-blue) !important;
 }
+
+/* Override pink accent colors */
+.text-span-3 {
+  color: #06B6D4 !important;
+}
+
+/* Process section color overrides */
+.process-heading {
+  color: #06B6D4 !important;
+}
+
+/* Service pricing text colors */
+.services-price-text {
+  color: #06B6D4 !important;
+}
+
+/* Replace pink variables */
+:root {
+  --pink_accent: #06B6D4 !important;
+  --pink-lite: #06B6D4 !important;
+}

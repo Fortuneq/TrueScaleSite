@@ -2049,8 +2049,8 @@ textarea.w-input, textarea.w-select {
 :root {
   --white: white;
   --bg-brightness: 30%;
-  --pink_accent: #ca13cc;
-  --pink-lite: #ee98ef;
+  --pink_accent: #06B6D4;
+  --pink-lite: #06B6D4;
   --dark: #111;
   --purple: #25233a;
 }
@@ -2864,7 +2864,7 @@ blockquote {
 
 .modal-wrapper {
   z-index: 39;
-  background-image: linear-gradient(45deg, #b668ff, #000);
+  background-image: linear-gradient(45deg, #06B6D4, #000);
   justify-content: center;
   align-items: center;
   display: flex;
@@ -3781,7 +3781,7 @@ blockquote {
 
 .ovals {
   z-index: -1;
-  border: 1px #8f00ff;
+  border: 1px #06B6D4;
   border-radius: 50%;
   width: auto;
   height: auto;
@@ -3790,7 +3790,7 @@ blockquote {
 }
 
 .oval2 {
-  border: 2px solid #8f00ff;
+  border: 2px solid #06B6D4;
   border-radius: 50%;
   width: 90px;
   height: 50px;
@@ -3800,7 +3800,7 @@ blockquote {
 }
 
 .oval1 {
-  border: 2px solid #8f00ff;
+  border: 2px solid #06B6D4;
   border-radius: 50%;
   width: 90px;
   height: 50px;
@@ -4060,7 +4060,7 @@ blockquote {
 }
 
 .card---wrap {
-  border: 1px solid #ca13ccb3;
+  border: 1px solid #06B6D4b3;
   border-radius: 0;
   width: 25%;
   margin-left: 0;
@@ -4278,7 +4278,7 @@ blockquote {
   z-index: 9;
   color: #fff;
   text-transform: uppercase;
-  background-image: radial-gradient(circle farthest-side at 100% 80%, #2f00ff, #c300ff);
+  background-image: radial-gradient(circle farthest-side at 100% 80%, #3B82F6, #06B6D4);
   border-radius: 4rem;
   justify-content: flex-end;
   align-items: center;
@@ -5323,7 +5323,7 @@ blockquote {
   }
 
   .text-span {
-    color: #ca13cc;
+    color: #06B6D4;
   }
 
   .service-card {
@@ -5363,7 +5363,7 @@ blockquote {
   }
 
   .title-medium-blue {
-    color: #a7d1ff;
+    color: #06B6D4;
     font-family: Jura, sans-serif;
     font-size: 16px;
     font-weight: 700;
