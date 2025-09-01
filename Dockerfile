@@ -13,22 +13,33 @@ RUN echo 'server { \
         root /usr/share/nginx/html; \
         index index.html; \
         try_files $uri $uri/ /index.html; \
+        \
+        add_header Cache-Control "no-cache, no-store, must-revalidate"; \
+        add_header Pragma "no-cache"; \
+        add_header Expires "0"; \
     } \
     \
-    # Настройки для статических файлов \
-    location ~* \.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot|webp|html)$ { \
-        expires 1y; \
-        add_header Cache-Control "public, immutable"; \
-        try_files $uri $uri/ =404; \
-    } \
-    \
-    # Обеспечиваем правильные MIME типы \
+    # CSS файлы \
     location ~* \.css$ { \
-        add_header Content-Type text/css; \
+        root /usr/share/nginx/html; \
+        add_header Content-Type "text/css"; \
+        add_header Cache-Control "no-cache"; \
+        try_files $uri =404; \
     } \
     \
+    # JS файлы \
     location ~* \.js$ { \
-        add_header Content-Type application/javascript; \
+        root /usr/share/nginx/html; \
+        add_header Content-Type "application/javascript"; \
+        add_header Cache-Control "no-cache"; \
+        try_files $uri =404; \
+    } \
+    \
+    # Остальные статические файлы \
+    location ~* \.(png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot|webp|html)$ { \
+        root /usr/share/nginx/html; \
+        add_header Cache-Control "no-cache"; \
+        try_files $uri =404; \
     } \
 }' > /etc/nginx/conf.d/default.conf
 
