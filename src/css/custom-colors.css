@@ -1,0 +1,44 @@
+/* Custom Blue Gradient Color Scheme */
+:root {
+  --primary-blue: #3B82F6;
+  --secondary-cyan: #06B6D4;
+  --gradient-primary: linear-gradient(135deg, #3B82F6 0%, #06B6D4 100%);
+  --gradient-primary-hover: linear-gradient(135deg, #2563EB 0%, #0891B2 100%);
+}
+
+/* Apply gradient to primary elements */
+.button,
+.submit-button-2,
+.nav-link:hover,
+.project-link:hover {
+  background: var(--gradient-primary) !important;
+}
+
+.button:hover,
+.submit-button-2:hover {
+  background: var(--gradient-primary-hover) !important;
+}
+
+/* Text color overrides */
+.text-span-3 {
+  background: var(--gradient-primary) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+/* Service card accents */
+.service-card:hover {
+  border: 2px solid var(--primary-blue) !important;
+}
+
+/* Animation colors */
+.pink-block-anim-left,
+.pink-block-anim-right {
+  background: var(--gradient-primary) !important;
+}
+
+/* Custom cursor color */
+.cursor-2 {
+  background-color: var(--primary-blue) !important;
+}
