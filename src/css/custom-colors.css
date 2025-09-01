@@ -14,6 +14,18 @@
   background: var(--gradient-primary) !important;
 }
 
+/* Center button text only for specific button */
+.button.w-button[data-w-id="969f17e4-0781-7b32-51fc-5c654f3eae0a"] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  line-height: 1 !important;
+  padding: 15px 20px !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+}
+
 .button:hover,
 .submit-button-2:hover {
   background: var(--gradient-primary-hover) !important;
