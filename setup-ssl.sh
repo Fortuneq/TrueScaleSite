@@ -12,14 +12,14 @@ mkdir -p src/.well-known/acme-challenge
 
 # Запускаем сайт без SSL
 echo "Запускаем сайт без SSL..."
-docker-compose up -d truescale-site
+docker compose up -d truescale-site
 
 # Ждем запуска nginx
 sleep 10
 
 # Получаем SSL сертификат
 echo "Получаем SSL сертификат..."
-docker-compose run --rm certbot
+docker compose run --rm certbot
 
 # Обновляем nginx конфигурацию для HTTPS
 echo "Обновляем nginx конфигурацию для HTTPS..."
@@ -29,7 +29,7 @@ sed -i.bak 's/#     /    /g' nginx.conf
 
 # Перезапускаем с SSL
 echo "Перезапускаем с SSL..."
-docker-compose restart truescale-site
+docker compose restart truescale-site
 
 echo "SSL настроен успешно!"
 echo "Ваш сайт доступен по адресу: https://$DOMAIN"
