@@ -40,7 +40,8 @@
 
 /* Custom cursor color */
 .cursor-2 {
-  background-color: var(--primary-blue) !important;
+  background-color: transparent !important;
+  border: 2px solid var(--primary-blue) !important;
 }
 
 /* Override pink accent colors */
