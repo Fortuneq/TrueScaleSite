@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  pikman-studio:
+    build: .
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    container_name: pikman-studio-site
+    
+    # Настройки для production
+    environment:
+      - NGINX_ENTRYPOINT_QUIET_LOGS=1
+    
+    # Логирование
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

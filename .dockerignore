@@ -1,0 +1,7 @@
+# Игнорируем ненужные файлы
+.git
+.DS_Store
+*.md
+docker-compose.yml
+Dockerfile
+.dockerignore
