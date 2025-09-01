@@ -2,8 +2,8 @@
 FROM nginx:alpine
 
 # Копируем статические файлы в директорию Nginx
-COPY "Pikman Studio_ Expert Web Development, E-commerce, and UX_UI Design.html" /usr/share/nginx/html/index.html
-COPY "Pikman Studio_ Expert Web Development, E-commerce, and UX_UI Design_files/" /usr/share/nginx/html/files/
+COPY ["Pikman Studio_ Expert Web Development, E-commerce, and UX_UI Design.html", "/usr/share/nginx/html/index.html"]
+COPY ["Pikman Studio_ Expert Web Development, E-commerce, and UX_UI Design_files/", "/usr/share/nginx/html/files/"]
 
 # Создаем кастомную конфигурацию Nginx
 RUN echo 'server { \
