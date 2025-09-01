@@ -55,19 +55,19 @@
           var linkText = $this.find('.footer-link-text').text();
           e.preventDefault();
           
-          if (linkText === 'Home') {
+          if (linkText === 'Главная' || linkText === 'Home') {
             window.scrollTo({ top: 0, behavior: 'smooth' });
             return;
           }
-          if (linkText === 'Process') {
+          if (linkText === 'Как мы работаем' || linkText === 'Process') {
             document.getElementById('process').scrollIntoView({ behavior: 'smooth' });
             return;
           }
-          if (linkText === 'Services') {
+          if (linkText === 'Что мы делаем' || linkText === 'Services') {
             document.getElementById('services-section').scrollIntoView({ behavior: 'smooth' });
             return;
           }
-          if (linkText === 'Projects') {
+          if (linkText === 'Кейсы' || linkText === 'Projects') {
             document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
             return;
           }
