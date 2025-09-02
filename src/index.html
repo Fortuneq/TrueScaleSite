@@ -73,8 +73,23 @@
           }
         }
 
+        // Handle collaboration button click
+        if ($this.hasClass('button') && $this.text().includes('Начать')) {
+          e.preventDefault();
+          $('.contact-form').show();
+          $this.hide();
+          return;
+        }
+        
         e.preventDefault();       
         setTimeout(function(){ window.location = href },delay);
+      });
+      
+      // Handle back button in contact form
+      $(document).on('click', '.back-button', function(e) {
+        e.preventDefault();
+        $('.contact-form').hide();
+        $('.button[data-w-id="969f17e4-0781-7b32-51fc-5c654f3eae0a"]').show();
       });
     });
   })(jQuery);

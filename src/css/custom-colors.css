@@ -14,8 +14,12 @@
   background: var(--gradient-primary) !important;
 }
 
-/* Center button text only for specific button */
+/* Fixed collaboration button at bottom */
 .button.w-button[data-w-id="969f17e4-0781-7b32-51fc-5c654f3eae0a"] {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 1000 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -24,6 +28,14 @@
   padding: 15px 20px !important;
   box-sizing: border-box !important;
   margin: 0 !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+}
+
+/* Hide button when contact form is visible */
+.contact-form:not([style*="display:none"]) .button.w-button[data-w-id="969f17e4-0781-7b32-51fc-5c654f3eae0a"] {
+  display: none !important;
 }
 
 .button:hover,
