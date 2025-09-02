@@ -11,6 +11,7 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
       - ./ssl:/etc/letsencrypt
+      - ./src/.well-known:/var/www/certbot/.well-known
     
     # Настройки для production
     environment:
