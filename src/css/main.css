@@ -3231,7 +3231,7 @@ blockquote {
   border: 1.4px none var(--pink_accent);
   color: #000;
   background-color: #0000;
-  background-image: url("https://cdn.prod.website-files.com/65b16b13f4948353fcf3b4bd/674b9899299c1cd0664d3130_pikman-accent-button-v5.svg");
+  background-image: url("https://cdn.prod.website-files.com/65b16b13f4948353fcf3b4bd/674b9899299c1cd0664d3130_truescale-accent-button-v5.svg");
   background-position: 0 0;
   background-size: auto;
   border-radius: 0;
@@ -3254,7 +3254,7 @@ blockquote {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   text-align: center;
-  background-image: url("https://cdn.prod.website-files.com/65b16b13f4948353fcf3b4bd/6733eddca4730d29baa16006_cta-button-pikman-studio.svg");
+  background-image: url("https://cdn.prod.website-files.com/65b16b13f4948353fcf3b4bd/6733eddca4730d29baa16006_cta-button-truescale.svg");
   background-position: 1px 0;
   background-size: auto;
   margin-top: 4vh;
@@ -4476,7 +4476,7 @@ blockquote {
   cursor: none;
 }
 
-.pikman-logo-holder {
+.truescale-logo-holder {
   width: 50%;
 }
 
@@ -4595,7 +4595,7 @@ blockquote {
 
 .submit-button-2 {
   background-color: #0000;
-  background-image: url("https://cdn.prod.website-files.com/65b16b13f4948353fcf3b4bd/674b96c3247ce92ee2dc62a0_pikman-accent-button-v2.svg");
+  background-image: url("https://cdn.prod.website-files.com/65b16b13f4948353fcf3b4bd/674b96c3247ce92ee2dc62a0_truescale-accent-button-v2.svg");
   background-size: auto;
   align-self: flex-end;
   width: 154px;
@@ -5295,7 +5295,7 @@ blockquote {
   }
 
   .button {
-    background-image: url("https://cdn.prod.website-files.com/65b16b13f4948353fcf3b4bd/674b9899299c1cd0664d3130_pikman-accent-button-v5.svg");
+    background-image: url("https://cdn.prod.website-files.com/65b16b13f4948353fcf3b4bd/674b9899299c1cd0664d3130_truescale-accent-button-v5.svg");
     margin-bottom: 6vh;
     right: 4vh;
   }
@@ -5675,7 +5675,7 @@ blockquote {
     padding-right: 10px;
   }
 
-  .paragraph-5, .pikman-logo-holder {
+  .paragraph-5, .truescale-logo-holder {
     width: 100%;
   }
 

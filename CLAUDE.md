@@ -4,10 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This directory contains a saved/downloaded website from Pikman Studio (www.pikman.studio) rather than a development project. The main content is:
+This directory contains a website for TrueScale (true-scale.ru), an AI automation and digital solutions company. The main content is:
 
-- `Pikman Studio_ Expert Web Development, E-commerce, and UX_UI Design.html` - Main HTML file
-- `Pikman Studio_ Expert Web Development, E-commerce, and UX_UI Design_files/` - Associated assets (CSS, JS, images)
+- `index.html` - Main HTML file
+- `src/` - Source files with assets (CSS, JS, images)
 
 ## Architecture
 
