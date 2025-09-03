@@ -12,10 +12,28 @@ services:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
       - ./ssl:/etc/letsencrypt
       - ./src:/var/www/certbot
+    depends_on:
+      - backend
     
     # Настройки для production
     environment:
       - NGINX_ENTRYPOINT_QUIET_LOGS=1
+    
+    # Логирование
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+    container_name: truescale-backend
     
     # Логирование
     logging:

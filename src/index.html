@@ -91,6 +91,33 @@
         $('.contact-form').hide();
         $('.button[data-w-id="969f17e4-0781-7b32-51fc-5c654f3eae0a"]').show();
       });
+      
+      // Handle form submission
+      $('#wf-form-order-form').on('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = {
+          name: $('#name').val(),
+          company: $('#company').val(),
+          service: $('#service').val(),
+          phone: $('#phone').val(),
+          email: $('#email').val()
+        };
+        
+        $.ajax({
+          url: '/api/submit-form',
+          method: 'POST',
+          contentType: 'application/json',
+          data: JSON.stringify(formData),
+          success: function(response) {
+            $('.w-form').hide();
+            $('.success-message').show();
+          },
+          error: function(xhr, status, error) {
+            $('.w-form-fail').show();
+          }
+        });
+      });
     });
   })(jQuery);
 </script><script src="js/three.min.js"></script>
