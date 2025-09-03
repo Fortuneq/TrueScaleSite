@@ -3231,7 +3231,7 @@ blockquote {
   border: 1.4px none var(--pink_accent);
   color: #000;
   background-color: #0000;
-  background-image: url("https://cdn.prod.website-files.com/65b16b13f4948353fcf3b4bd/674b9899299c1cd0664d3130_truescale-accent-button-v5.svg");
+  background-image: none;
   background-position: 0 0;
   background-size: auto;
   border-radius: 0;
@@ -3254,7 +3254,7 @@ blockquote {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   text-align: center;
-  background-image: url("https://cdn.prod.website-files.com/65b16b13f4948353fcf3b4bd/6733eddca4730d29baa16006_cta-button-truescale.svg");
+  background-image: none;
   background-position: 1px 0;
   background-size: auto;
   margin-top: 4vh;
@@ -3931,7 +3931,7 @@ blockquote {
 }
 
 .video-holder {
-  background-image: url("https://cdn.prod.website-files.com/65b16b13f4948353fcf3b4bd/6731422f8b31f965ce237a51_Frame%2018.svg");
+  background-image: none;
   background-position: 0 0;
   background-size: cover;
   width: 100%;
@@ -4595,7 +4595,7 @@ blockquote {
 
 .submit-button-2 {
   background-color: #0000;
-  background-image: url("https://cdn.prod.website-files.com/65b16b13f4948353fcf3b4bd/674b96c3247ce92ee2dc62a0_truescale-accent-button-v2.svg");
+  background-image: none;
   background-size: auto;
   align-self: flex-end;
   width: 154px;
@@ -5295,7 +5295,7 @@ blockquote {
   }
 
   .button {
-    background-image: url("https://cdn.prod.website-files.com/65b16b13f4948353fcf3b4bd/674b9899299c1cd0664d3130_truescale-accent-button-v5.svg");
+    background-image: none;
     margin-bottom: 6vh;
     right: 4vh;
   }
