@@ -100,6 +100,7 @@
   width: 100vw !important;
   height: 100vh !important;
   z-index: -1 !important;
+  background-color: white !important;
 }
 
 .fixed-animation-section canvas {
@@ -108,6 +109,78 @@
   max-width: 100% !important;
   max-height: 100% !important;
   object-fit: contain !important;
+}
+
+/* Hero секция и все элементы - прозрачный фон */
+.hero-new-home,
+.section-new-home,
+.navbar-new-home {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Убираем серый overlay фильтр */
+.bg-filter {
+  background-color: transparent !important;
+}
+
+/* Убираем черный фон с body */
+.body-system {
+  background-color: transparent !important;
+}
+
+/* Убираем все серые и цветные фоны */
+* {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+/* Восстанавливаем белый фон только для нужных элементов */
+.service-card,
+.contact-form,
+.contact-form-holder {
+  background-color: white !important;
+}
+
+/* Черный текст */
+.display-system, 
+.display-medium, 
+.headline-system, 
+.headline-medium,
+.body-large, 
+.body-medium,
+.services-card-header,
+.services-description,
+.process-heading,
+.nav-link,
+.footer-link-text {
+  color: black !important;
+}
+
+/* Все основные секции - прозрачный фон для видимости 3D */
+.content-section,
+.footer-section,
+.values-text-holder,
+.services-block-header,
+.accordion-comp,
+.wrapper,
+.drawer,
+.services-holder,
+.section-3,
+.div-image-2,
+.text-content,
+.section-mobile,
+.projest-text-container {
+  background-color: transparent !important;
+}
+
+/* Только карточки с белым фоном для читаемости */
+.service-card,
+.contact-form,
+.contact-form-holder {
+  background-color: white !important;
+  border-radius: 8px !important;
 }
 
 /* Center navbar content */
