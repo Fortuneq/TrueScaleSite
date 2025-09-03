@@ -1,0 +1,46 @@
+/**
+ * COMPONENTS CSS
+ * 
+ * Component-specific styles extracted from main.css
+ * Includes styles for reusable UI components
+ */
+
+/* ================================
+   CURSOR ANIMATION COMPONENT
+   Custom cursor that follows mouse movement
+   ================================ */
+.cursor-wrapper {
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+/* ================================
+   GRADIENT TEXT COMPONENT
+   Animated text with gradient color effect
+   ================================ */
+.design-tools-animation-text {
+  /* Apply blue to cyan gradient text color */
+  background: linear-gradient(90deg, #3B82F6 0%, #06B6D4 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* ================================
+   CONTACT FORM ANIMATION BLOCKS
+   Animated blocks for form transitions
+   ================================ */
+.pink-block-anim-left,
+.black-block-anim-left,
+.pink-block-anim-right,
+.black-block-anim-right {
+  /* Animation blocks for form transitions */
+  /* Styles handled by Webflow animations */
+}
+
+/* ================================
+   WEBFLOW FORCE OUTLINE
+   Accessibility outline control
+   ================================ */
+.wf-force-outline-none[tabindex="-1"]:focus {
+  outline: none;
+}

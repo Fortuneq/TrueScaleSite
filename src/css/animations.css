@@ -1,0 +1,56 @@
+/**
+ * ANIMATIONS CSS
+ * 
+ * Animation-related styles for Webflow interactions
+ * Controls initial visibility states for animated elements
+ */
+
+/* ================================
+   WEBFLOW ANIMATION VISIBILITY STATES
+   Controls which elements are hidden on page load
+   and revealed through Webflow interactions
+   ================================ */
+
+/* Desktop Animations (min-width: 992px) */
+@media (min-width:992px) {
+  /* Case study videos - initially hidden, revealed on scroll */
+  html.w-mod-js:not(.w-mod-ix) [data-w-id="b84ac818-1304-30a6-3072-10eb567361ea"] {opacity:0;}
+  html.w-mod-js:not(.w-mod-ix) [data-w-id="8110a510-7329-d865-fa57-b9a3c2b65bf0"] {opacity:0;}
+  html.w-mod-js:not(.w-mod-ix) [data-w-id="a81734d5-3279-2b16-ee70-8069b1fe0006"] {opacity:0;}
+  html.w-mod-js:not(.w-mod-ix) [data-w-id="853ac233-296f-0bdf-69b2-46ccc3f24cf3"] {opacity:0;}
+  
+  /* Case study text accordions - initially collapsed */
+  html.w-mod-js:not(.w-mod-ix) [data-w-id="89ba2848-7c54-f9e9-2b71-8dab18b02c4f"] {height:0px;}
+  html.w-mod-js:not(.w-mod-ix) [data-w-id="89ba2848-7c54-f9e9-2b71-8dab18b02c57"] {height:0px;}
+  html.w-mod-js:not(.w-mod-ix) [data-w-id="89ba2848-7c54-f9e9-2b71-8dab18b02c5f"] {height:0px;}
+  html.w-mod-js:not(.w-mod-ix) [data-w-id="89ba2848-7c54-f9e9-2b71-8dab18b02c67"] {height:0px;}
+  
+  /* Navigation and hero elements */
+  html.w-mod-js:not(.w-mod-ix) [data-w-id="7d750a1f-edae-96a7-ce27-3f135c186e19"] {opacity:0;}
+  html.w-mod-js:not(.w-mod-ix) [data-w-id="3e052366-493e-0722-86da-4f8e18ab045e"] {opacity:0;}
+  html.w-mod-js:not(.w-mod-ix) [data-w-id="969f17e4-0781-7b32-51fc-5c654f3eae0a"] {opacity:0;}
+}
+
+/* Tablet Animations (768px - 991px) */
+@media (max-width:991px) and (min-width:768px) {
+  /* Navigation and hero elements for tablet */
+  html.w-mod-js:not(.w-mod-ix) [data-w-id="7d750a1f-edae-96a7-ce27-3f135c186e19"] {opacity:0;}
+  html.w-mod-js:not(.w-mod-ix) [data-w-id="3e052366-493e-0722-86da-4f8e18ab045e"] {opacity:0;}
+  html.w-mod-js:not(.w-mod-ix) [data-w-id="969f17e4-0781-7b32-51fc-5c654f3eae0a"] {opacity:0;}
+}
+
+/* Mobile Animations (480px - 767px) */
+@media (max-width:767px) and (min-width:480px) {
+  /* Navigation and hero elements for mobile */
+  html.w-mod-js:not(.w-mod-ix) [data-w-id="7d750a1f-edae-96a7-ce27-3f135c186e19"] {opacity:0;}
+  html.w-mod-js:not(.w-mod-ix) [data-w-id="3e052366-493e-0722-86da-4f8e18ab045e"] {opacity:0;}
+  html.w-mod-js:not(.w-mod-ix) [data-w-id="969f17e4-0781-7b32-51fc-5c654f3eae0a"] {opacity:0;}
+}
+
+/* ================================
+   OVERFLOW CONTROL
+   Prevents horizontal scrolling issues
+   ================================ */
+body {
+  overflow-x: hidden;
+}
