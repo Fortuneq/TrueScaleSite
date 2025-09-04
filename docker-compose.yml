@@ -48,6 +48,6 @@ services:
     volumes:
       - ./ssl:/etc/letsencrypt
       - ./src:/var/www/certbot
-    command: certonly --webroot --webroot-path=/var/www/certbot --email vladvolkov.work@gmail.com --agree-tos --no-eff-email -d true-scale.ru -d www.true-scale.ru
+    command: certonly --webroot --webroot-path=/var/www/certbot --email vladvolkov.work@gmail.com --agree-tos --no-eff-email -d true-scale.ru -d www.true-scale.ru -d n8n.true-scale.ru
     depends_on:
       - truescale-site
